@@ -1,8 +1,7 @@
 FROM node
 WORKDIR /app
-COPY package*.json .
-RUN npm install
 COPY . .
+RUN npm install
 WORKDIR /app/frontend
 RUN npm install
 WORKDIR /app
